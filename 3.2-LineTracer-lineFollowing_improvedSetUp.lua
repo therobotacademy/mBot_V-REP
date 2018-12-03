@@ -28,7 +28,7 @@ function sysCall_threadmain()
     rightJoint=sim.getObjectHandle("RightJoint")
     leftJointDynamic=sim.getObjectHandle("DynamicLeftJoint")
     rightJointDynamic=sim.getObjectHandle("DynamicRightJoint")
-    nominalLinearVelocity=0.2
+    nominalLinearVelocity=0.1
     wheelRadius=0.027
     interWheelDistance=0.119
     initialVehicleZpos=sim.getObjectPosition(objHandle,sim.handle_parent)[3]
@@ -81,11 +81,14 @@ function sysCall_threadmain()
         linearVelocityLeft=nominalLinearVelocity*s
         linearVelocityRight=nominalLinearVelocity*s
         if (sensorReading[1]==false) then
-            linearVelocityLeft=linearVelocityLeft*0.3
+            linearVelocityLeft=linearVelocityLeft*0.03
+            linearVelocityRight=linearVelocityRight*8.5
         end
         if (sensorReading[3]==false) then
-            linearVelocityRight=linearVelocityRight*0.3
+            linearVelocityLeft=linearVelocityLeft*1.5
+            linearVelocityRight=linearVelocityRight*0.03
         end
+        
 
         -- Now make it move!
         if (dynamicSimulation) then
