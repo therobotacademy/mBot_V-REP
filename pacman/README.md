@@ -2,7 +2,7 @@ Forked from: https://github.com/btirai/pacman
 
 
 Installation in Unix
-------------
+--------------------
 1) Install Dependencies:
 
 `sudo apt-get install build-essential libgl1-mesa-dev python3-tk qtdeclarative5-dev`
@@ -24,7 +24,7 @@ Run in a terminal the following commands:
 Run in Unix
 ------------
 
-Run in a terminal the following commands:
+Run in a terminal the following commands (you have to be inside the folder, since the executable calls another files in the same folder || bt_pacman -> build/behavior_tree_editor is just for information purposes):
 
 `cd pacman/build`
 
