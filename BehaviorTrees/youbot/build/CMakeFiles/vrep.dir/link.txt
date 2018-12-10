@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvrep.a  CMakeFiles/vrep.dir/vrep_api/extApi.c.o CMakeFiles/vrep.dir/vrep_api/extApiPlatform.c.o
+/usr/bin/ranlib libvrep.a

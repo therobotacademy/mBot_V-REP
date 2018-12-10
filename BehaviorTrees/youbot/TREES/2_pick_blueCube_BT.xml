@@ -1,0 +1,15 @@
+<root>
+    <BehaviorTree>
+        <Fallback text="IFTHENELSE">
+            <IsObjectGrasped text="blueCube"/>
+            <Sequence text="IFTHENELSE">
+                <Fallback text="IFTHENELSE">
+                    <IsRobotCloseTo text="blueCube"/>
+                    <MoveCloseTo text="blueCube"/>
+                </Fallback>
+                <GraspObject text="blueCube"/>
+            </Sequence>
+        </Fallback>
+    </BehaviorTree>
+</root>
+

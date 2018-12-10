@@ -1,0 +1,25 @@
+<root>
+    <BehaviorTree>
+        <Fallback text="IFTHENELSE">
+            <IsObjectAtObject text="yellowCube,goalLocation"/>
+            <Sequence text="IFTHENELSE">
+                <Fallback text="IFTHENELSE">
+                    <IsObjectGrasped text="yellowCube"/>
+                    <Sequence text="IFTHENELSE">
+                        <Fallback text="IFTHENELSE">
+                            <IsRobotCloseTo text="yellowCube"/>
+                            <MoveCloseTo text="yellowCube"/>
+                        </Fallback>
+                        <GraspObject text="yellowCube"/>
+                    </Sequence>
+                </Fallback>
+                <Fallback text="IFTHENELSE">
+                    <IsRobotCloseTo text="goalLocation"/>
+                    <MoveCloseTo text="goalLocation"/>
+                </Fallback>
+                <PutObjectInFront text="yellowCube"/>
+            </Sequence>
+        </Fallback>
+    </BehaviorTree>
+</root>
+

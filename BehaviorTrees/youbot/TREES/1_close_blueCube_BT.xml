@@ -1,0 +1,9 @@
+<root>
+    <BehaviorTree>
+        <Fallback text="IFTHENELSE">
+            <IsRobotCloseTo text="blueCube"/>
+            <MoveCloseTo text="blueCube"/>
+        </Fallback>
+    </BehaviorTree>
+</root>
+

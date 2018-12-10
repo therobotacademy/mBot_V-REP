@@ -1,0 +1,12 @@
+<root>
+    <BehaviorTree>
+        <Sequence text="IFTHENELSE">
+            <Fallback text="IFTHENELSE">
+                <IsRobotCloseTo text="blueCube"/>
+                <MoveCloseTo text="blueCube"/>
+            </Fallback>
+            <GraspObject text="blueCube"/>
+        </Sequence>
+    </BehaviorTree>
+</root>
+
